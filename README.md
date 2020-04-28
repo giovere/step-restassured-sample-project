@@ -11,10 +11,10 @@ Step | Method | URI Path             | Validate                      | Return
 1    | GET    | /json                | title is "Sample Slide Show"  | all slide titles
 2    | GET    | /get?param=x&param=y | params size is 2              | origin ip address
 3    | GET    | /uuid                | UUID length is 36             | UUID
-4    | GET    | /anything            | quote of the day is correct   | slide title/uuid pairs
+4    | POST   | /anything            | quote of the day is correct   | slide title/uuid pairs
 
 
-Sample request of step 4:
+Step 4 sample request:
  
 ```json
 {
@@ -26,8 +26,7 @@ Sample request of step 4:
 		]
 }
 ```
-
-##References:
+## References:
 * [STEP - Test Execution Platform](https://step.exense.ch/)
 * [REST Assured - Testing and validating REST services](http://rest-assured.io/)
 * [httpbin.org - A simple HTTP Request & Response Service](http://httpbin.org)
