@@ -18,14 +18,21 @@ Step 4 sample request:
  
 ```json
 {
-	"title": "Sample Slide Show",
-	"quote of the day": "Apples fall. Birds fly. We live. We die.",
-	"slides": [
-		{"title": "title1", "uuid": "uid1"},
-		{"title": "title2", "uuid": "uid2"}
-		]
+    "title": "Sample Slide Show",
+    "quote of the day": "Apples fall. Birds fly. We live. We die.",
+    "slides": [
+        {
+            "title": "Wake up to WonderWidgets!",
+            "uuid": "0a7caee7-77e0-4461-9747-1b44e8f34f30"
+        },
+        {
+            "title": "Overview",
+            "uuid": "0a7caee7-77e0-4461-9747-1b44e8f34f31"
+        }
+    ]
 }
 ```
+
 ## References:
 * [STEP - Test Execution Platform](https://step.exense.ch/)
 * [REST Assured - Testing and validating REST services](http://rest-assured.io/)
