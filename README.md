@@ -2,7 +2,7 @@
 
 ## Description
 This repository contains a sample project, showcasing integration between STEP (Java) and REST Assured.
-Test-cases are based on the [httpbin.org](http://httpbin.org) endpoints.
+Test-Scenario is based on the [httpbin.org](http://httpbin.org) endpoints and can be used as an initialization project to get started.
 
 ## Test-Scenario
 
