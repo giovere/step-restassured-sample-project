@@ -16,7 +16,6 @@ import static org.junit.jupiter.api.Assertions.assertTrue;
 public class TestStepWithReassured {
 
     private static KeywordRunner.ExecutionContext ctx;
-//    static String slideTitles;
     static String slideTitle1;
     static String slideTitle2;
     static String uuid1;
@@ -51,7 +50,6 @@ public class TestStepWithReassured {
                 .add("slideTitle2", slideTitle2)
                 .build().toString()
         ).getPayload();
-
         assertTrue(getParamsPayload.getString("originIp").length()>=8);
         assertEquals(2, getParamsPayload.getString("parameters").split("\\|").length);
     }

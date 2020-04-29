@@ -42,7 +42,6 @@ public class KwsRest extends AbstractKeyword {
         output.add("slideshowTitle", slideshowTitle);
     }
 
-
     @Keyword(name = "get params")
     public void getParams() throws IOException {
         String uriPath = input.getString("uriPath"); // "/get"
