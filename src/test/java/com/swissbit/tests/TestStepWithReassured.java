@@ -29,12 +29,17 @@ public class TestStepWithReassured {
     @ParameterizedTest
     @MethodSource("dataProvider")
     void runTest(String argIn) throws Exception {
-        String arg = ctx.run("dummyKw", Json.createObjectBuilder()
-                .add("arg", argIn)
+
+//        String arg = ctx.run("dummyKw", Json.createObjectBuilder()
+//                .add("arg", argIn)
+//                .build().toString()
+//        ).getPayload().getString("arg");
+//        assertEquals("hi there", arg);
+//        assertFalse(arg.isEmpty());
+
+        ctx.run("get slides", Json.createObjectBuilder()
                 .build().toString()
-        ).getPayload().getString("arg");
-        assertEquals(argIn, arg);
-        assertFalse(arg.isEmpty());
+        );
     }
 
     private static Stream<Arguments> dataProvider() {
