@@ -38,18 +38,17 @@ public class KwsRest extends AbstractKeyword {
 
     @Keyword(name = "get slides")
     public void getSlides() throws IOException {
+        String uriPath = input.getString("uriPath"); // "/json"
         //@formatter:off
         Response response =
                 given()
                         .spec(RestUtils.getRequestSpecification())
                         .expect().defaultParser(Parser.JSON)
                 .when()
-                        .get("/json");
+                        .get(uriPath);
         //@formatter:on
-
         response.then().spec(RestUtils.getResponseSpecification());
         Slideshow slideshow = response.as(SlideshowParent.class).getSlideshow();
-
         String slideshowTitle = slideshow.getTitle();
         String slideTitles = slideshow.getSlides().stream().map(s -> s.getTitle()).collect(Collectors.joining("|"));
         logger.info("slide titles: " + slideTitles);

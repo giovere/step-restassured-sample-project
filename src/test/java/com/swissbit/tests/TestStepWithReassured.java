@@ -38,6 +38,7 @@ public class TestStepWithReassured {
 //        assertFalse(arg.isEmpty());
 
         ctx.run("get slides", Json.createObjectBuilder()
+                .add("uriPath", "/json")
                 .build().toString()
         );
     }
