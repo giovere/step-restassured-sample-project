@@ -19,8 +19,8 @@ Step 4 sample request:
 ```json
 {
     "title": "Sample Slide Show",
-    "quote of the day": "Apples fall. Birds fly. We live. We die.",
-    "slides": [
+    "quoteOfTheDay": "Apples fall. Birds fly. We live. We die.",
+    "quoteSlides": [
         {
             "title": "Wake up to WonderWidgets!",
             "uuid": "0a7caee7-77e0-4461-9747-1b44e8f34f30"

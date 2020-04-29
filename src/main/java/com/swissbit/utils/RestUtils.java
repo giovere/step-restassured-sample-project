@@ -23,8 +23,8 @@ public class RestUtils {
         return new RequestSpecBuilder()
                 .setContentType(ContentType.JSON)
                 .setBaseUri(baseUri)
-//                .addFilter(RequestLoggingFilter.logRequestTo(logStream))
-//                .addFilter(ResponseLoggingFilter.logResponseTo(logStream))
+                .addFilter(RequestLoggingFilter.logRequestTo(logStream))
+                .addFilter(ResponseLoggingFilter.logResponseTo(logStream))
                 .build();
     }
 
